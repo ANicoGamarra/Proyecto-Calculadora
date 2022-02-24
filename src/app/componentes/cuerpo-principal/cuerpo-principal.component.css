@@ -1,0 +1,10 @@
+/* *{
+    background-color: hsl(222, 26%, 31%),
+  } */
+.container{
+    width: 375px;
+    
+}
+*{
+  background-color: red;
+}
