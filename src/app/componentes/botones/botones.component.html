@@ -1,0 +1,9 @@
+    <div *ngIf="btnInfo !== 'RESET' || btnInfo !== '='" else botonesLargos>
+        <button class="btn btn-primary m-2" type="submit"> {{btnInfo}} </button>
+    </div>
+
+    <ng-template #botonesLargos> <!-- no funciona, no aparecen largos los botones --> 
+        <div class="">
+            <button class="btn btn-primary m-2" id="btnLargos" type="submit" style="width:200px"> {{btnInfo}} </button>
+        </div>
+    </ng-template>

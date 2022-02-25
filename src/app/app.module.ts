@@ -8,6 +8,9 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { CuerpoPrincipalComponent } from './componentes/cuerpo-principal/cuerpo-principal.component';
 import { DisplayComponent } from './componentes/display/display.component';
 import { NumerosComponent } from './componentes/numeros/numeros.component';
+import { BotonesComponent } from './componentes/botones/botones.component';
+import { OperacionesServicesService } from './servicios/operaciones-services.service';
+
 
 @NgModule({
   declarations: [
@@ -15,14 +18,16 @@ import { NumerosComponent } from './componentes/numeros/numeros.component';
     HeaderComponent,
     CuerpoPrincipalComponent,
     DisplayComponent,
-    NumerosComponent
+    NumerosComponent,
+    BotonesComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     FormsModule
   ],
-  providers: [],
+  providers: [OperacionesServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
